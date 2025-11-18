@@ -1,10 +1,13 @@
 # Sonic Visions - Music Visualizer 🎵
 
+**[Live Demo](https://mittingphx.github.io/music-visualizer-demo/)**
+
 A stunning, real-time music visualizer built with modern web technologies. Experience your music through dynamic, responsive visuals powered by the Web Audio API.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+
 
 ## ✨ Features
 
