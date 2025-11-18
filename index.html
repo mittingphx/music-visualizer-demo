@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonic Visions - Music Visualizer</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <canvas id="visualizer-canvas"></canvas>
+
+  <div id="ui-container">
+    <div class="header">
+      <h1>Sonic Visions</h1>
+    </div>
+
+    <div class="controls">
+      <div class="input-group">
+        <label for="audio-upload" class="custom-file-upload">
+          Upload Audio
+        </label>
+        <input type="file" id="audio-upload" accept="audio/*" />
+
+        <span class="divider">OR</span>
+
+        <input type="text" id="audio-url" placeholder="Enter Audio URL"
+          value="https://mdn.github.io/webaudio-examples/audio-basics/outfoxing.mp3" />
+        <button id="load-url-btn">Load</button>
+      </div>
+
+      <div class="visualizer-select">
+        <label for="visualizer-mode">Mode:</label>
+        <select id="visualizer-mode">
+          <option value="bars">Spectrum Bars</option>
+          <option value="circular">Circular Spectrum</option>
+          <option value="waveform">Waveform</option>
+          <option value="particles">Particles</option>
+        </select>
+      </div>
+
+      <div class="playback-controls">
+        <button id="play-pause-btn" disabled>Play</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
